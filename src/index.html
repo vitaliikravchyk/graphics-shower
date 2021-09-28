@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+  </head>
+  <body>
+    <div class="info-container">
+      <div class="info">
+        <span class="info-description">Number of current shapes:</span>
+        <span
+          type="number"
+          readonly
+          value="0"
+          id="number-of-shapes-info"
+          class="number-of-shapes-info"
+          >0</span
+        >
+      </div>
+      <div class="info">
+        <span class="info-description">Surface area occupied by shapes:</span>
+        <span id="area-info" class="area-info">0 px^2</span>
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <div class="controllers">
+      <div class="controller-container">
+        <label for="shapes-per-sec" class="controller-description"
+          >Number of shapes per sec</label
+        >
+        <div class="controller">
+          <button
+            id="shapes-per-sec-decrease"
+            class="controller__button controller__button--decrease"
+          >
+            -
+          </button>
+          <input
+            type="number"
+            readonly
+            value="1"
+            id="shapes-per-sec"
+            class="number-input"
+          />
+          <button
+            id="shapes-per-sec-increase"
+            class="controller__button controller__button--increase"
+          >
+            +
+          </button>
+        </div>
+      </div>
+      <div class="controller-container">
+        <label for="gravity" class="controller-description"
+          >Gravity value</label
+        >
+        <div class="controller">
+          <button
+            id="gravity-decrease"
+            class="controller__button controller__button--decrease"
+          >
+            -
+          </button>
+          <input
+            type="number"
+            readonly
+            value="1"
+            id="gravity"
+            class="number-input"
+          />
+          <button
+            id="gravity-increase"
+            class="controller__button controller__button--increase"
+          >
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
